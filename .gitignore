@@ -1,3 +1,4 @@
 node_modules
-database.service.ts
+ui-debug.log
+firebase-debug.log
 .env
