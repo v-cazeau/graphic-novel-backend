@@ -1,31 +1,34 @@
 {
-  "name": "functions",
+  "name": "graphic-novel-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.ts",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node api.ts",
+    "dev": "nodemon api.ts",
     "lint": "eslint --ext .js,.ts .",
     "build": "tsc",
     "build:watch": "tsc --watch",
     "serve": "npm run build && firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
-    "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log"
   },
-  "engines": {
-    "node": "16"
-  },
-  "main": "lib/index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "firebase-admin": "^11.5.0",
-    "firebase-functions": "^4.2.0"
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-functions": "^4.4.1",
+    "mongodb": "^5.6.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.12.0",
-    "@typescript-eslint/parser": "^5.12.0",
-    "eslint": "^8.9.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-plugin-import": "^2.25.4",
-    "firebase-functions-test": "^3.0.0",
-    "typescript": "^4.9.0"
-  },
-  "private": true
+    "typescript": "^5.1.3"
+  }
 }
