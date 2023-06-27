@@ -11,6 +11,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getAllVisuals = void 0;
 const mongoConnect_1 = require("./mongoConnect");
+// import { ObjectId } from "mongodb";
 const coll = mongoConnect_1.db.collection("visual-story-one");
 function getAllVisuals(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
